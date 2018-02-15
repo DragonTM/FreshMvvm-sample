@@ -96,12 +96,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FMS.Forms\FMS.Forms.csproj">
-      <Project>{7D097E67-60A7-4EF4-BA58-F92C3A7AAF5A}</Project>
-      <Name>FMS.Forms</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
   </ItemGroup>
@@ -119,6 +113,12 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FMS.Forms\FMS.Forms.csproj">
+      <Project>{7D097E67-60A7-4EF4-BA58-F92C3A7AAF5A}</Project>
+      <Name>FMS.Forms</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.274780\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.274780\build\netstandard1.0\Xamarin.Forms.targets')" />
