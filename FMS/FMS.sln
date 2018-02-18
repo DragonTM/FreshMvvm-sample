@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMS.Forms.iOS", "iOS\FMS.Fo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMS.Forms.Droid", "Droid\FMS.Forms.Droid.csproj", "{74F08332-6F4C-4BA4-A1A3-DABBBACFD1CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMS.Core", "FMS.Core\FMS.Core.csproj", "{33E65E92-D4CC-4554-A20B-4BB14B362583}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{74F08332-6F4C-4BA4-A1A3-DABBBACFD1CE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{74F08332-6F4C-4BA4-A1A3-DABBBACFD1CE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{74F08332-6F4C-4BA4-A1A3-DABBBACFD1CE}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Release|iPhone.Build.0 = Release|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{33E65E92-D4CC-4554-A20B-4BB14B362583}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

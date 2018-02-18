@@ -303,4 +303,7 @@
     <None Remove="icons\win\view-TimePicker-16.png" />
     <None Remove="icons\win\view-WebView-16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FMS.Core\FMS.Core.csproj" />
+  </ItemGroup>
 </Project>
