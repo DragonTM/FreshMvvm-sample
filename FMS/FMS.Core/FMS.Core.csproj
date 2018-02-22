@@ -8,4 +8,8 @@
     <Folder Include="UI\" />
     <Folder Include="UI\ViewModels\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FreshMvvm" Version="2.2.4" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.2.5" />
+  </ItemGroup>
 </Project>
