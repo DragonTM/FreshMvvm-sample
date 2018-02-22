@@ -1,8 +1,7 @@
 ﻿using FreshMvvm;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using System;
+
 namespace FMS.Core.UI.ViewModels
 {
 	public class MainViewModel : FreshBasePageModel
@@ -11,20 +10,35 @@ namespace FMS.Core.UI.ViewModels
 
 		public ObservableCollection<string> Items { get; } = new ObservableCollection<string>();
 
+		public string SelectedItem { get; set; }
+
 		protected override void ViewIsAppearing(object sender, System.EventArgs e)
 		{
 			base.ViewIsAppearing(sender, e);
 
-			Task.Delay(1000).ContinueWith(t =>
-			{
-				Title = "Hello there";
-			});
+			Title = "Hello there";
+
+			Items.Clear();
 
 			foreach (var item in LoadData())
 			{
 				Items.Add(item);
 			}
 		}
+
+		private void OnSelectedItemChanged()
+		{
+			if (SelectedItem == null)
+			{
+				return;
+			}
+
+			var item = SelectedItem;
+			SelectedItem = null;
+
+			CoreMethods.PushPageModel<DetailsViewModel>(item);
+		}
+
 
 		private IEnumerable<string> LoadData()
 		{

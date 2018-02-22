@@ -17,9 +17,13 @@ namespace FMS.Forms
 			ConfigurePagesMapping();
 
 			var loginContainer = new FreshNavigationContainer(FreshPageModelResolver.ResolvePageModel<LoginViewModel>(), NavigationHelper.LoginNavigationContainerName);
-			var mainContainer = new FreshNavigationContainer(FreshPageModelResolver.ResolvePageModel<MainViewModel>(), NavigationHelper.MainNavigationContainerName);
+			var mainContainer = new FreshMasterDetailNavigationContainer(NavigationHelper.MainNavigationContainerName);
 
-			MainPage =loginContainer;
+			mainContainer.Init("Menu");
+
+			mainContainer.AddPage<MainViewModel>("Main");
+
+			MainPage = loginContainer;
 		}
 
 		protected override void OnStart()
@@ -43,6 +47,8 @@ namespace FMS.Forms
 
 			mapper.Register<LoginViewModel, LoginPage>();
 			mapper.Register<MainViewModel, MainPage>();
+			mapper.Register<MenuViewModel, MenuPage>();
+			mapper.Register<DetailsViewModel, DetailsPage>();
 
 			FreshPageModelResolver.PageModelMapper = mapper;
 		}

@@ -6,7 +6,9 @@
 	Title="{Binding Title}">
 	<ContentPage.Content>
 		<ListView
-			ItemsSource="{Binding Items}">
+			ItemsSource="{Binding Items}"
+			CachingStrategy="RecycleElement"
+			SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
 			
 			<ListView.ItemTemplate>
 				<DataTemplate>

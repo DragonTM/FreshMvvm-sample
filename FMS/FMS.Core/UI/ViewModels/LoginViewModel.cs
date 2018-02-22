@@ -1,7 +1,7 @@
-﻿using System;
-using FreshMvvm;
+﻿using FreshMvvm;
 using System.Windows.Input;
 using System.Threading.Tasks;
+
 namespace FMS.Core.UI.ViewModels
 {
 	public class LoginViewModel : FreshBasePageModel
